@@ -32,6 +32,7 @@ class Bond:
     market: str
 
     seniority: str
+    """Investment grade bonds can either be secured or unsecured on the company's assets."""
 
     isin: str
 
