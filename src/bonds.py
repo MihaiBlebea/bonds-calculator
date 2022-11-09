@@ -73,7 +73,10 @@ class Bonds(list):
         return self._only_this(lambda b: b.currency == "GBP")
 
     def only_uk_based(self)-> Bonds:
-        return self._only_this(lambda b: b.country == "UK")
+        return self._only_this(lambda b: b.country == "GB")
+
+    def only_country(self, value: str)-> Bonds:
+        return self._only_this(lambda b: b.country == value)
 
     def only_public_companies(self)-> Bonds:
         return self._only_this(lambda b: b.ownership == "Public")

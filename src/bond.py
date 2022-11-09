@@ -1,6 +1,17 @@
+from typing import Dict
 from dataclasses import dataclass
 from datetime import datetime
+import pycountry
 
+
+def all_countries()-> Dict[str, str]:
+    countries = {}
+    for country in pycountry.countries:
+        countries[country.name] = country.alpha_2
+
+    return countries
+
+COUNTRIES = all_countries()
 
 @dataclass
 class Bond:
@@ -66,6 +77,7 @@ class Bond:
         self.ytm_ytc = round(float(self.ytm_ytc) / 100, 5)
         self.price = round(float(self.price), 4)
         self.available = round(float(self.available), 4)
+        self.country = self.__prep_country(self.country)
 
     def _prep_coupon(self, value)-> float:
         coupon = value.replace("%", "")
@@ -73,4 +85,13 @@ class Bond:
             coupon = coupon.split("+")[1]
 
         return float(coupon) / 100
+
+    def __prep_country(self, value: str)-> str:
+        if value == "UK":
+            return "GB"
+
+        if value == "USA":
+            return "US"
+
+        return COUNTRIES[value] if value in COUNTRIES else value
 

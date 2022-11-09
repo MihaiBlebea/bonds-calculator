@@ -9,6 +9,8 @@ from src.bonds import bonds
 def bond_calc(app):
     file = app.params.file
     output = app.params.output
+    based = app.params.based
+    coupon = float(app.params.coupon)
 
     b = bonds()
     with open(file, newline="") as csvfile:
@@ -21,10 +23,11 @@ def bond_calc(app):
 
     b = b.only_secured_seniority()\
         .only_bond_type()\
-        .only_uk_based()\
+        .only_country(based)\
         .only_fixed_coupon()\
-        .only_coupon_gt(0.05)\
+        .only_coupon_gt(coupon)\
         .only_available()
+    
 
     match output:
         case "dataframe":
@@ -39,7 +42,11 @@ def bond_calc(app):
 
 bond_calc.add_param("-f", "--file", help="csv file to load the data from", required=True)
 
-bond_calc.add_param("-o", "--output", help="output format", default="dataframe", )
+bond_calc.add_param("-o", "--output", help="output format", default="dataframe")
+
+bond_calc.add_param("-b", "--based", help="bond based in country", default="GB")
+
+bond_calc.add_param("-c", "--coupon", help="coupon must be greater than", default=0.05)
 
 if __name__ == "__main__":
     bond_calc.run()
