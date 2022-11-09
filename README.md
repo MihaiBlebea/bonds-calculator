@@ -25,6 +25,8 @@ Just run this command from the root folder:
 
 -o=dataframe - *the output of the result. The options are: dataframe, ticker, company*
 
+-of=./output.csv - *if you selected dataframe as output in prev flag, you can also pass a file to save the dataframe as csv.*
+
 -b=GB - *the country in which the company who issued the bond is based. Default: GB*
 
 -c=0.07 - *the bond coupon (interest rate per year) must be greater than this value to be returned.*

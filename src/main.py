@@ -11,6 +11,7 @@ def bond_calc(app):
     output = app.params.output
     based = app.params.based
     coupon = float(app.params.coupon)
+    output_file = app.params.output_file
 
     b = bonds()
     with open(file, newline="") as csvfile:
@@ -32,6 +33,8 @@ def bond_calc(app):
     match output:
         case "dataframe":
             print(b.to_df())
+            if output_file is not None and ".csv" in output_file:
+                b.to_df().to_csv(output_file)
         case "ticker":
             pprint(b.to_tickers())
         case "company":
@@ -43,6 +46,8 @@ def bond_calc(app):
 bond_calc.add_param("-f", "--file", help="csv file to load the data from", required=True)
 
 bond_calc.add_param("-o", "--output", help="output format", default="dataframe")
+
+bond_calc.add_param("-of", "--output_file", help="output file, can work only with -o as dataframe", default=None)
 
 bond_calc.add_param("-b", "--based", help="bond based in country", default="GB")
 
