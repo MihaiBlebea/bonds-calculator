@@ -1,2 +1,4 @@
 env
 output.csv
+bonds.egg-info
+*/__pycache__

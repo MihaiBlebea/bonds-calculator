@@ -63,5 +63,9 @@ bond_calc.add_param("-c", "--coupon", help="coupon must be greater than", defaul
 
 bond_calc.add_param("-m", "--maturity", help="max maturity level [s - short, m - medium, l - long]", default=None)
 
-if __name__ == "__main__":
+
+def main():
     bond_calc.run()
+
+if __name__ == "__main__":
+    main()

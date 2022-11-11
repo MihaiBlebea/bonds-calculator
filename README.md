@@ -8,16 +8,14 @@
 
 - Run "make setup" in the root folder
 
-- Run "./execute.sh ./src/main.py -f=wisealpha_market_221109.csv -o dataframe -c 0.07"
+- Run "./install.sh"
 
 
 ## How to use?
 
-You can use this CLI tool by calling the ./execute.sh script. This takes care of the python env and dependencies.
+You can use this CLI tool by calling the `bonds` and passing the right param flags. 
 
-Just run this command from the root folder:
-
-`./execute.sh ./main.py -f=wisealpha_market_221109.csv -o dataframe -c 0.07 -m s`
+Ex: `bonds -f=wisealpha_market_221109.csv -o dataframe -c 0.07 -m s`
 
 ### Flags to use:
 

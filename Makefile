@@ -20,5 +20,3 @@ list:
 init:
 	./env/bin/pip3 install -r requirements.txt
 
-build:
-	./env/bin/pyinstaller -F --clean -n bonds ./main.py
