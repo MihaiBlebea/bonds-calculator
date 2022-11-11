@@ -1,5 +1,7 @@
 from __future__ import annotations
 from typing import List, Callable
+from datetime import datetime
+from dateutil.relativedelta import relativedelta
 from pandas import DataFrame
 from src.bond import Bond
 
@@ -92,3 +94,6 @@ class Bonds(list):
 
     def only_available(self)-> Bonds:
         return self._only_this(lambda b: b.available > 0)
+    
+    def only_maturity(self, maturity_level: str = "l")-> Bonds:
+        return self._only_this(lambda b: b.get_maturity_level() == maturity_level)

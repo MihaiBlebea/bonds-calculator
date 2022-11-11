@@ -1,6 +1,7 @@
 from typing import Dict
 from dataclasses import dataclass
 from datetime import datetime
+from math import floor
 import pycountry
 
 
@@ -95,4 +96,15 @@ class Bond:
             return "US"
 
         return COUNTRIES[value] if value in COUNTRIES else value
+
+    def get_maturity_level(self)-> str:
+        diff = self.maturity - datetime.now()
+        diff_months = floor(diff.days / 30)
+
+        if diff_months < 6:
+            return "s"
+        elif diff_months < 12:
+            return "m"
+        else:
+            return "l"
 

@@ -20,5 +20,5 @@ list:
 init:
 	./env/bin/pip3 install -r requirements.txt
 
-run-server:
-	./env/bin/flask --app main run --host=0.0.0.0
+build:
+	./env/bin/pyinstaller -F --clean -n bonds ./main.py

@@ -17,7 +17,7 @@ You can use this CLI tool by calling the ./execute.sh script. This takes care of
 
 Just run this command from the root folder:
 
-`./execute.sh ./src/main.py -f=wisealpha_market_221109.csv -o dataframe -c 0.07`
+`./execute.sh ./main.py -f=wisealpha_market_221109.csv -o dataframe -c 0.07 -m s`
 
 ### Flags to use:
 
@@ -30,3 +30,5 @@ Just run this command from the root folder:
 -b=GB - *the country in which the company who issued the bond is based. Default: GB*
 
 -c=0.07 - *the bond coupon (interest rate per year) must be greater than this value to be returned.*
+
+-m=s - *Max maturity, can be s - short, m - medium, l - long.*
