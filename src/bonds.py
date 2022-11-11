@@ -97,3 +97,9 @@ class Bonds(list):
     
     def only_maturity(self, maturity_level: str = "l")-> Bonds:
         return self._only_this(lambda b: b.get_maturity_level() == maturity_level)
+
+    def only_good_grade(self)-> Bonds:
+        return self._only_this(lambda b: b.is_a_rate() or b.is_b_rate())
+
+    def only_bad_grade(self)-> Bonds:
+        return self._only_this(lambda b: b.is_b_rate() or b.is_c_rate())

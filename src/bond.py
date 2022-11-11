@@ -79,7 +79,7 @@ class Bond:
         self.ytm_ytc = round(float(self.ytm_ytc) / 100, 5)
         self.price = round(float(self.price), 4)
         self.available = round(float(self.available), 4)
-        self.country = self.__prep_country(self.country)
+        self.country = self._prep_country(self.country)
 
     def _prep_coupon(self, value)-> float:
         coupon = value.replace("%", "")
@@ -88,7 +88,7 @@ class Bond:
 
         return float(coupon) / 100
 
-    def __prep_country(self, value: str)-> str:
+    def _prep_country(self, value: str)-> str:
         if value == "UK":
             return "GB"
 
@@ -96,6 +96,19 @@ class Bond:
             return "US"
 
         return COUNTRIES[value] if value in COUNTRIES else value
+
+    def is_rate(self, rate: str)-> bool:
+        rate = 0
+        if rate in self.snp_rate:
+            rate += 1
+
+        if rate in self.moodys_rate:
+            rate += 1
+
+        if rate in self.fitch_rate:
+            rate += 1
+
+        return rate > 2
 
     def get_maturity_level(self)-> str:
         diff = self.maturity - datetime.now()
@@ -107,4 +120,13 @@ class Bond:
             return "m"
         else:
             return "l"
+
+    def is_a_rate(self)-> bool:
+        return self.is_rate("A")
+
+    def is_b_rate(self)-> bool:
+        return self.is_rate("B")
+
+    def is_c_rate(self)-> bool:
+        return self.is_rate("C")
 

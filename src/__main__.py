@@ -25,8 +25,10 @@ def bond_calc(app):
     coupon = app.params.coupon 
     output_file = app.params.output_file
     maturity = app.params.maturity
+    goodgrade = app.params.goodgrade
+    badgrade = app.params.badgrade
     cmd = app.params.cmd # use this for positionl argument nr 1
-    
+
     b = load_bonds_from_csv(file)
 
     b = b.only_secured_seniority()\
@@ -37,6 +39,11 @@ def bond_calc(app):
 
     if coupon is not None:
         b = b.only_coupon_gt(coupon)
+
+    if goodgrade:
+        b = b.only_good_grade()
+    elif badgrade:
+        b = b.only_bad_grade()
 
     if maturity is not None:
         assert maturity in ["s", "m", "l"], "Maturity value must be either one of s, m or l."
@@ -71,6 +78,10 @@ bond_calc.add_param("-b", "--based", help="bond based in country", default="GB")
 bond_calc.add_param("-c", "--coupon", help="coupon must be greater than", default=None, type=float)
 
 bond_calc.add_param("-m", "--maturity", help="max maturity level [s - short, m - medium, l - long]", default=None)
+
+bond_calc.add_param("-gg", "--goodgrade", help="only good grade bonds", default=False, action="store_true")
+
+bond_calc.add_param("-bg", "--badgrade", help="only bad grade bonds", default=False, action="store_true")
 
 bond_calc.add_param("-a", "--amount", help="amount in £ to invest in bonds [just for simulating]", type=int, default=20_000)
 
