@@ -1,0 +1,146 @@
+Company,Industry,Ticker,Type,Market,Seniority,ISIN,Currency,State,Moody's,S&P,Fitch,Country,Ownership,Maturity,Next Payment,Coupon Type,Coupon Frequency,Coupon,Current Yield,YTM / YTC,Price,Available
+British Petroleum,"Energy, Utilities & Infrastructure",BPLN,Perpetual,Main Market,Unsecured,XS2193663619,GBP,Open,Baa1,BBB,BBB+,UK,Public,22-03-2027,22-06-2023,Fixed,Annual,4.25%,4.802,7.304,88.5000,95089.2600
+Virgin Media,Cable & Telecoms,VRGMDF,Bond,Main Market,Senior Secured,XS2187646901,GBP,Open,B2,B,B+,UK,Private,15-07-2028,15-01-2023,Fixed,Biannual,4.875%,5.865,8.708,83.1250,79583.2300
+Atalian,"Business Services, Shipping & Logistics",ATALIA,Bond,Main Market,Unsecured,XS1820760079,GBP,Suspended,Caa1,B,,France,Private,15-05-2025,15-12-2022,Fixed,Biannual,6.625%,6.559,6.187,101.0000,37504.8000
+Domestic & General,Consumer & Food,DGGLN_2026,Bond,Main Market,Senior Secured,XS2028892474,GBP,Open,B2,B,,UK,Private,31-07-2026,28-02-2023,Fixed,Biannual,6.5%,7.625,11.490,85.2500,9824.7800
+Domestic & General,Consumer & Food,DGGLN_2027,Bond,High Yield,Unsecured,XS2028892987,GBP,Open,Caa1,CCC+,,UK,Private,31-07-2027,28-02-2023,Fixed,Biannual,9.25%,11.402,14.969,81.1250,0
+Talk Talk,Cable & Telecoms,TALKLN,Bond,Main Market,Unsecured,XS2121167345,GBP,Open,,B,B+,UK,Public,20-02-2025,20-02-2023,Fixed,Biannual,3.875%,4.791,14.015,80.8750,116729.0900
+True Potential,Banks & Financials,TRUEPT_6.5,Bond,Main Market,Senior Secured,XS2436314160,GBP,Open,B1,B,,United Kingdom,Private,15-02-2027,15-02-2023,Fixed,Biannual,6.5%,7.988,12.243,81.3750,29516.4100
+SSE,"Energy, Utilities & Infrastructure",SSELN,Perpetual,Main Market,Unsecured,XS2195190876,GBP,Open,Baa3,BBB-,BBB-,UK,Public,14-01-2026,14-04-2023,Fixed,Annual,3.74%,4.156,7.263,90.0000,832.2700
+Centrica,"Energy, Utilities & Infrastructure",CNALN,Bond,Main Market,Unsecured,XS1216019585,GBP,Open,Ba1,BB+,WD,UK,Public,10-04-2075,10-04-2023,Fixed,Biannual,5.25%,5.974,6.013,87.8750,37838.4800
+Ocado,Technology,OCDOLN,Bond,Main Market,Unsecured,XS2393761692,GBP,Open,B3,,B+,UK,Public,08-10-2026,08-04-2023,Fixed,Biannual,3.875%,4.976,11.006,77.8750,155523.1200
+Thames Water,"Energy, Utilities & Infrastructure",THAMES_2026,Bond,Main Market,Unsecured,XS2258560361,GBP,Open,B1,,B+,UK,Private,19-05-2026,19-11-2022,Fixed,Biannual,4.625%,5.473,9.964,84.5000,0
+Charities Aid Foundation,Services,CAF2,Bond,Main Market,Senior Secured,XS2408363278,GBP,Open,,,,United Kingdom,Private,08-12-2031,08-12-2022,Fixed,Biannual,3.5%,4.094,5.558,85.5000,8.4200
+Stonegate,Property,STONPB,Bond,Main Market,Senior Secured,XS2210014788,GBP,Open,B3,,B,UK,Private,31-07-2025,15-01-2023,Fixed,Biannual,8.25%,8.980,11.835,91.8750,0
+One Savings Bank,Banks & Financials,ONESAV_4.6s,Perpetual,Perpetuals,Subordinated,GB00B67JQX63,GBP,Open,,,,United Kingdom,Public,27-08-2024,27-02-2023,Fixed,Biannual,4.6007%,4.894,8.283,94.0000,32934.5100
+EDF,"Energy, Utilities & Infrastructure",EDF,Perpetual,Main Market,Unsecured,FR0011700293,GBP,Open,Ba1,B+,BBB-,France,Public,22-01-2029,22-01-2023,Fixed,Biannual,5.875%,7.532,10.846,78.0000,0
+Arrow,Banks & Financials,ARWLN_2026,Bond,Main Market,Senior Secured,XS2010026990,GBP,Open,B1,B+,BB-,UK,Public,15-11-2026,15-11-2022,Fixed,Biannual,6.0%,8.040,14.598,74.6250,2843.8900
+Daily Mail & General Trust,"Entertainment, Media & Broadcasting",DMGTLN,Bond,Main Market,Unsecured,XS0306155499,GBP,Open,,BB-,BB+,UK,Public,21-06-2027,21-06-2023,Fixed,Annual,6.375%,6.929,8.359,92.0000,92363.0500
+Virgin Media,Cable & Telecoms,VMED_GREEN,Bond,Main Market,Senior Secured,XS2358483258,GBP,Open,Ba3,BB-,BB+,UK,Private,15-07-2031,15-01-2023,Fixed,Biannual,4.5%,5.651,7.773,79.6250,26.7700
+Together,Banks & Financials,BRACKN_6.75,Bond,High Yield,"Unsecured, PIK",XS2400445362,GBP,Open,,B+,B,UK,Private,01-11-2027,15-04-2023,Payment-In-Kind Toggle,Biannual,6.75%,9.262,14.625,72.8750,34966.3600
+Modulaire Group,Services,MODULA,Bond,Main Market,Senior Secured,XS2397447538,GBP,Open,B2,B,B+,UK,Private,30-11-2028,30-11-2022,Fixed,Biannual,6.125%,7.346,9.839,83.3750,5.8800
+Eros,"Entertainment, Media & Broadcasting",EROS,Bond,Special Situations,Unsecured,XS1112834608,GBP,Open,,,,India,Public,15-04-2023,15-04-2023,Fixed,Biannual,8.5%,49.275,0.000,17.2500,59314.1900
+Inspired Entertainment,"Entertainment, Media & Broadcasting",INSE,Bond,Main Market,Senior Secured,XS2343996919,GBP,Open,B2,,B,United States,Private,01-06-2026,01-12-2022,Fixed,Biannual,7.875%,8.445,10.189,93.2500,342.7900
+Alpha Plus Group,Property,ALPHPH,Bond,Main Market,Senior Secured,XS1379593566,GBP,Open,,,,UK,Private,31-03-2024,31-03-2023,Fixed,Biannual,5.0%,5.263,8.941,95.0000,0
+4Finance,Banks & Financials,FOURFN,Bond,High Yield,Unsecured,XS1417876163,EUR,Open,B2,B-,,Latvia,Private,23-02-2025,23-11-2022,Fixed,Quarterly,11.25%,11.494,12.525,97.8750,22081.6200
+Lowell (Garfunkelux),Banks & Financials,GFKLDE,Bond,Main Market,Senior Secured,XS2250155467,GBP,Open,B2,B+,B+,UK & Germany,Private,01-11-2025,01-05-2023,Fixed,Biannual,7.75%,10.473,19.757,74.0000,0
+Petrobras,"Energy, Utilities & Infrastructure",PETBRA_2034,Bond,Main Market,Unsecured,XS0982711474,GBP,Open,Ba1,BB-,BB-,Brazil,Public,16-01-2034,16-01-2023,Fixed,Annual,6.625%,7.760,8.538,85.3750,0
+Petrobras,"Energy, Utilities & Infrastructure",PETBRA,Bond,Main Market,Unsecured,XS0835891838,GBP,Open,Ba1,BB-,BB-,Brazil,Public,01-10-2029,01-10-2023,Fixed,Annual,5.375%,6.305,8.104,85.2500,0
+United Group,"Entertainment, Media & Broadcasting",ADRBID,Bond,High Yield,"Unsecured, PIK",XS1843436731,EUR,Open,,B-,,Netherlands,LLC,15-11-2025,15-11-2022,Payment-In-Kind Toggle,Biannual,9.0%,11.650,19.347,77.2500,0
+Punch Taverns,Property,PUBLN,Bond,Main Market,Senior Secured,XS2357307664,GBP,Open,B3,,B+,UK,Private,30-06-2026,30-12-2022,Fixed,Biannual,6.125%,6.901,9.890,88.7500,53102.5000
+R.E.A. Holdings,"Energy, Utilities & Infrastructure",RELN,Bond,High Yield,Unsecured,GB00BYY8MM32,GBP,Open,,,,UK,Private,31-08-2025,31-12-2022,Fixed,Biannual,8.75%,9.103,11.666,96.1250,0
+Iceland,Retail,ICELTD_2028,Bond,Main Market,Senior Secured,XS2304198331,GBP,Open,B3,B,B+,UK,Private,15-05-2028,15-11-2022,Fixed,Biannual,4.375%,6.119,11.512,71.5000,0
+Very Group (Shop Direct),Retail,SHODFP_2026,Bond,Main Market,Senior Secured,XS2370618618,GBP,Open,B3,,B-,UK,Private,01-08-2026,01-02-2023,Fixed,Biannual,6.5%,9.220,17.658,70.5000,0
+Encore Capital Group,Banks & Financials,ECPG_4.25s,Bond,Main Market,Senior Secured,XS2346127272,GBP,Open,Ba2,,BB+,United States,Public,01-06-2028,01-12-2022,Fixed,Biannual,4.25%,5.753,10.601,73.8750,0
+Asda,Retail,ASSDLN_2026,Bond,Main Market,Senior Secured,XS2303071992,GBP,Open,B1,,BB+,United Kingdom,Private,16-02-2026,01-04-2023,Fixed,Biannual,3.25%,3.976,9.945,81.7500,0
+Constellation Automotive Group,Automotive,CONSTE,Bond,Main Market,Senior Secured,XS2366652084,GBP,Open,B2,,B-,United Kingdom,Public,15-07-2027,15-04-2023,Fixed,Biannual,4.875%,7.345,15.193,66.3750,0
+Advanz Pharma,Healthcare,ADVZCN,Bond,Main Market,Senior Secured,XS2325700164,GBP,Open,B3,B-,B+,United Kingdom,Public,01-04-2028,01-04-2023,Fixed,Biannual,6.25%,8.065,12.051,77.5000,0
+Boparan,Consumer & Food,BOPRLN_2025,Bond,Main Market,Senior Secured,XS2262082758,GBP,Open,Caa1,B-,B,UK,Private,30-11-2025,30-11-2022,Fixed,Biannual,7.625%,10.873,21.501,70.1250,0
+British American Tobacco,Consumer & Food,BATSLN,Bond,Main Market,Unsecured,XS1488409977,GBP,Open,Baa2,BBB+,BBB,United Kingdom,Public,09-09-2052,09-09-2023,Fixed,Annual,2.25%,4.918,6.249,45.7500,0
+Together,Banks & Financials,BRACKN_2027,Bond,Main Market,Senior Secured,XS2287892751,GBP,Open,,BB-,BB-,UK,Private,15-01-2027,15-01-2023,Fixed,Biannual,5.25%,6.344,10.459,82.7500,7.1800
+Dignity,Services,DIGFIN,Bond,Main Market,Second Lien Secured,XS1115296631,GBP,Open,,B+,BB+,UK,Public,31-12-2049,31-12-2022,Fixed,Biannual,4.6956%,6.556,7.058,71.6250,21596.9900
+AMP Clean Energy,"Energy, Utilities & Infrastructure",AMPILT,Bond,Main Market,Senior Secured,GB00BYVQM755,GBP,Open,,,,UK,Private,17-10-2036,31-12-2022,Fixed,Quarterly,8.0%,8.247,8.454,97.0000,0
+Canary Wharf Group,Property,CWHARF,Bond,Main Market,Senior Secured,XS2327414731,GBP,Open,Baa3,,BBB-,United Kingdom,Private,23-04-2028,23-04-2023,Fixed,Biannual,3.375%,4.405,8.889,76.6250,0
+Gatwick,"Energy, Utilities & Infrastructure",GTWICK,Bond,Main Market,Unsecured,XS2329602135,GBP,Open,Ba3,,BB-,United Kingdom,Private,07-04-2026,07-04-2023,Fixed,Biannual,4.375%,5.102,9.370,85.7500,0
+Greensleeves Homes Trust,Healthcare,RCHBLN_2026,Bond,Main Market,Unsecured,XS1575974933,GBP,Open,,,,UK,Charitable Trust,30-03-2026,30-03-2023,Fixed,Biannual,4.25%,4.509,6.162,94.2500,0
+Greensleeves Homes Trust,Healthcare,RCHBLN_2030,Bond,Main Market,Unsecured,XS2250730749,GBP,Open,,,,UK,Charitable Trust,17-12-2030,17-12-2022,Fixed,Biannual,5.0%,5.249,5.742,95.2500,48590.3000
+Bruntwood,Property,BRU2,Bond,High Yield,Unsecured,XS2104011304,GBP,Open,,,,UK,Private,25-02-2025,25-02-2023,Fixed,Biannual,6.0%,6.061,6.474,99.0000,31.6400
+Heathrow,"Energy, Utilities & Infrastructure",HTHROW,Bond,Main Market,Unsecured,XS2081020872,GBP,Open,B1,,BB+,UK,Private,01-09-2029,01-03-2023,Fixed,Biannual,4.625%,6.401,10.423,72.2500,0
+International Personal Finance,Banks & Financials,IPFLN_2025,Bond,High Yield,Unsecured,XS2256977013,EUR,Open,Ba3,,BB-,UK,Public,12-11-2025,12-11-2022,Fixed,Annual,9.75%,12.131,18.107,80.3750,23294.6100
+Regional REIT,Property,RGL1,Bond,High Yield,Unsecured,XS1849479602,GBP,Open,,,,United Kingdom,Public,06-08-2024,06-02-2023,Fixed,Biannual,4.5%,4.675,6.835,96.2500,109.5100
+John Lewis,Retail,JOHLEW,Bond,Main Market,Unsecured,XS1140961563,GBP,Open,,,,UK,Trust,18-12-2034,18-12-2022,Fixed,Annual,4.25%,6.746,9.315,63.0000,0
+Provident Financial,Banks & Financials,PFGLN7s,Bond,Main Market,Unsecured,XS1827005411,GBP,Open,,,BB,UK,Public,04-06-2023,04-12-2022,Fixed,Biannual,8.25%,8.189,6.830,100.7500,84855.1700
+Rolls-Royce,Automotive,ROLLS,Bond,Main Market,Unsecured,XS0944831154,GBP,Open,Ba3,BB-,BB-,UK,Public,18-06-2026,18-06-2023,Fixed,Annual,3.375%,4.000,8.430,84.3750,0
+GKN,Automotive,GKNLN,Bond,Main Market,Unsecured,XS1611857795,GBP,Open,Ba1,BB+,BB+,UK,Public,12-05-2032,12-05-2023,Fixed,Annual,4.625%,6.086,8.216,76.0000,22248.1100
+Matalan,Retail,MTNLN,Bond,Main Market,Senior Secured,XS1756324411,GBP,Open,B3,CCC,,UK,Private,31-01-2023,31-01-2023,Fixed,Biannual,6.75%,7.162,37.577,94.2500,5365.6500
+NewDay,Banks & Financials,NWDAY,Bond,Main Market,Senior Secured,XS1554448271,GBP,Open,B2,B+,,UK,Private,01-02-2024,01-02-2023,Fixed,Biannual,7.375%,7.763,11.906,95.0000,107003.6100
+The Co-operative Bank,Banks & Financials,COOPBK,Bond,High Yield,Unsecured,XS1986325972,GBP,Open,,,,UK,Private,25-04-2029,25-04-2023,Fixed,Biannual,9.5%,10.229,11.073,92.8750,0
+Iceland,Retail,ICE2,Bond,Main Market,Senior Secured,XS1681806326,GBP,Open,B3,B,B+,UK,Private,15-03-2025,15-04-2023,Fixed,Biannual,4.625%,5.473,12.485,84.5000,0
+Energia,"Energy, Utilities & Infrastructure",VRDLN,Bond,Main Market,Senior Secured,XS1684812339,GBP,Open,Ba3,,BB+,Ireland,Private,15-09-2024,15-03-2023,Fixed,Biannual,4.75%,5.205,10.089,91.2500,11.9200
+BUPA,"Business Services, Shipping & Logistics",BUPA_2035,Bond,Main Market,Unsecured,XS2190040100,GBP,Open,Baa1,,BBB-,UK,Private,14-06-2035,14-12-2022,Fixed,Biannual,4.125%,5.366,6.905,76.8750,0
+Royal London Mutual,Banks & Financials,RLMI,Bond,Main Market,Unsecured,XS2061962465,GBP,Open,Baa1,BBB+,,UK,Private,07-10-2049,07-10-2023,Fixed,Annual,4.875%,6.436,6.762,75.7500,11.2000
+Saga,Travel,SAGA,Bond,Main Market,Unsecured,XS1610655950,GBP,Open,B1,B,,UK,Public,12-05-2024,12-11-2022,Fixed,Biannual,3.375%,3.766,11.113,89.6250,289.7200
+International Personal Finance,Banks & Financials,IPFLN_2023,Bond,High Yield,Unsecured,XS1998163148,GBP,Open,Ba3,,BB-,UK,Public,14-12-2023,14-12-2022,Fixed,Biannual,7.75%,7.868,9.230,98.5000,25801.9200
+Burford Capital,Banks & Financials,BURLN_2026,Bond,Main Market,Unsecured,XS1614096425,GBP,Open,Ba2,,,UK,Public,01-12-2026,01-12-2022,Fixed,Biannual,5.0%,5.565,7.985,89.8500,0
+Hiscox,Banks & Financials,HSXLN,Bond,Main Market,Unsecured,XS1323450236,GBP,Open,,BBB-,BBB-,UK,Public,24-11-2045,24-11-2022,Fixed,Annual,6.125%,6.499,6.512,94.2500,0
+Amigo Loans,Banks & Financials,AMIGO,Bond,Special Situations,Senior Secured,XS1533928625,GBP,Open,B3,B-,,UK,Private,15-01-2024,15-01-2023,Fixed,Biannual,7.625%,7.881,10.640,96.7500,9.9700
+M&G,Banks & Financials,MGNLN,Bond,Main Market,Unsecured,XS1888925747,GBP,Open,A3,BBB,BBB+,UK,Public,20-10-2068,20-04-2023,Fixed,Biannual,6.25%,7.236,7.280,86.3750,19014.5500
+DP World,"Energy, Utilities & Infrastructure",DPWDU,Bond,Main Market,Unsecured,XS1883878883,GBP,Open,Baa3,,BBB-,United Arab Emirates,Private,25-09-2030,25-09-2023,Fixed,Annual,4.25%,4.576,5.313,92.8750,37844.0700
+Travelodge,Travel,TRAVEL_FRN,Bond,Main Market,Senior Secured,XS2021472084,GBP,Open,Caa1,CCC+,,UK,Private,15-07-2025,16-01-2023,Floating,Quarterly,L+5.375%,5.934,12.749,91.0000,0
+HSBC,Banks & Financials,HSBC,Bond,Main Market,Unsecured,XS0498768315,GBP,Open,Baa1,BBB,A-,Hong Kong,Public,29-03-2040,29-03-2023,Fixed,Annual,6.0%,6.575,6.759,91.2500,77276.2900
+Society of Lloyd's,Banks & Financials,LLYDIN,Bond,Main Market,Unsecured,XS1558089261,GBP,Open,,BBB+,A-,UK,Private,07-02-2047,07-02-2023,Fixed,Annual,4.875%,5.285,5.385,92.2500,9.5100
+Kraft Heinz,Consumer & Food,KHC,Bond,Main Market,Unsecured,XS1253559865,GBP,Open,Baa3,BBB-,BBB-,USA,Public,01-07-2027,01-07-2023,Fixed,Annual,4.125%,4.319,5.173,95.5000,0
+Yell,"Entertainment, Media & Broadcasting",YELL,Bond,Special Situations,Senior Secured,XS1813549257,GBP,Open,WR,NR,,UK,Private,31-03-2027,15-03-2023,Fixed,Biannual,8.75%,8.761,8.781,99.8750,294.8500
+Scottish Widows,Banks & Financials,SCTWID,Bond,Main Market,Unsecured,XS0914791768,GBP,Open,Baa1,NR,BBB+,UK,Subsidiary,16-06-2043,16-06-2023,Fixed,Annual,7.0%,6.723,6.516,104.1250,17525.7900
+Standard Chartered,Banks & Financials,STANLN,Bond,Main Market,Unsecured,XS1075419694,GBP,Open,Baa2,BBB-,BBB+,UK,Public,06-06-2034,06-06-2023,Fixed,Annual,5.125%,5.663,6.206,90.5000,60466.9700
+Legal & General,Banks & Financials,LGEN,Bond,Main Market,Unsecured,XS1079028566,GBP,Open,A3,BBB+,BBB+,UK,Public,27-06-2064,27-12-2022,Fixed,Biannual,5.5%,6.232,6.300,88.2500,58427.8900
+Marks & Spencer,Retail,MARSPE,Bond,Main Market,Unsecured,XS2024535036,GBP,Open,Ba1,BB+,BB+,UK,Public,10-07-2027,10-07-2023,Fixed,Annual,4.5%,5.357,8.645,84.0000,52.3500
+Eramet,"Energy, Utilities & Infrastructure",ERAFP,Bond,Main Market,Unsecured,FR0013461274,EUR,Open,,,,France,Public,21-05-2025,21-05-2023,Fixed,Annual,5.875%,5.882,5.827,99.8750,0
+Provident Financial,Banks & Financials,PFGLN,Bond,Main Market,Unsecured,XS1209091856,GBP,Open,,,BB,UK,Public,09-10-2023,09-04-2023,Fixed,Biannual,5.125%,5.182,6.397,98.9000,0
+Codere Group,"Entertainment, Media & Broadcasting",CDRSM,Bond,Main Market,Senior Secured,XS1513765922,EUR,Suspended,Caa3,CCC-,WD,Spain,Public,30-11-2027,30-04-2023,Payment-In-Kind,Biannual,12.75%,15.338,0.000,83.1250,0
+Independent Oil & Gas,"Energy, Utilities & Infrastructure",IOGLN,Bond,Main Market,Senior Secured,NO0010863236,EUR,Open,,,,UK,Public,20-09-2024,20-12-2022,Floating,Quarterly,E+9.5%,9.682,12.182,98.1250,401.5500
+Esure,Banks & Financials,ESURLN,Bond,High Yield,Unsecured,XS1155568436,GBP,Open,,,,UK,Private,19-12-2024,19-12-2022,Fixed,Biannual,6.75%,7.143,9.711,94.5000,0
+Just Group,Banks & Financials,JUSTLIN_2029,Bond,Main Market,Unsecured,XS2059770409,GBP,Open,,,BBB,UK,Public,26-10-2029,26-04-2023,Fixed,Biannual,8.125%,7.908,7.607,102.7500,28.9500
+Metro Bank,Banks & Financials,MTRLON_2025,Bond,High Yield,Unsecured,XS2063492396,GBP,Open,,,B,UK,Public,08-10-2025,08-04-2023,Fixed,Biannual,9.5%,12.025,19.284,79.0000,0
+Intu,Property,INTULN_2023,Bond,Special Situations,Senior Secured,XS0904228557,GBP,Suspended,,CCC-,,UK,Private,31-03-2024,17-03-2023,Fixed,Biannual,9.0%,20.225,0.000,44.5000,0
+Saga,Travel,SAGALN,Bond,Main Market,Unsecured,XS2357117881,GBP,Open,B1,B,,UK,Public,15-07-2026,15-01-2023,Fixed,Biannual,5.5%,7.871,16.834,69.8750,65236.7900
+Pension Insurance Corporation,Banks & Financials,PICORP_PERP,Perpetual,Perpetuals,"Unsecured, AT1",XS1843431427,GBP,Open,,,BBB-,UK,Private,25-07-2029,25-01-2023,Fixed,Biannual,7.375%,8.263,9.584,89.2500,0
+Flora Foods Group,Consumer & Food,SIGHCO_EUR,Bond,High Yield,Unsecured,XS1813504666,EUR,Open,Caa2,CCC,CCC+,UK,Private,15-05-2026,15-11-2022,Fixed,Biannual,5.75%,8.880,20.304,64.7500,0
+Ardagh,Consumer & Food,ARDAGH,Bond,Main Market,Unsecured,XS1628848241,GBP,Open,Caa1,B-,CCC+,Ireland,Public,15-07-2027,15-01-2023,Fixed,Biannual,4.75%,6.822,13.785,69.6250,0
+TP ICAP,Banks & Financials,TCAPLN,Bond,Main Market,Unsecured,XS1555815494,GBP,Open,,,BBB-,UK,Public,26-01-2024,26-01-2023,Fixed,Biannual,5.25%,5.412,7.918,97.0000,25355.5300
+Virgin Money,Banks & Financials,CYBG_2024,Perpetual,Perpetuals,"Unsecured, AT1",XS1959441640,GBP,Open,Ba1,B,BB,UK,Public,08-06-2024,08-12-2022,Fixed,Biannual,9.25%,9.487,11.025,97.5000,0
+Anglian Water,"Energy, Utilities & Infrastructure",OSPRAQ,Bond,Main Market,Unsecured,XS1732478000,GBP,Open,WR,,BBB-,UK,Private,08-03-2026,08-03-2023,Fixed,Biannual,4.0%,4.401,7.138,90.8800,44669.9800
+Pension Insurance Corporation,Banks & Financials,PICORP,Bond,Main Market,Unsecured,XS1523966197,GBP,Open,,,BBB+,UK,Private,23-11-2026,23-11-2022,Fixed,Annual,8.0%,7.814,7.167,102.3750,90647.7500
+Shawbrook Bank,Banks & Financials,SHAWLN,Perpetual,Perpetuals,"Unsecured, AT1",XS1731676794,GBP,Suspended,,,,UK,Private,08-12-2022,08-12-2022,Fixed,Biannual,7.875%,9.144,453.417,86.1250,0
+Center Parcs,Property,CPARKS,Bond,Main Market,Second Lien Secured,XS1622392014,GBP,Open,,B-,B,UK,Private,28-08-2025,28-02-2023,Fixed,Biannual,4.875%,5.335,8.408,91.3750,0
+Deutsche Bank,Banks & Financials,DBPERP,Perpetual,Perpetuals,"Unsecured, AT1",XS1071551391,GBP,Open,Ba3,BB-,BB,Germany,Public,30-04-2026,30-04-2023,Fixed,Annual,7.125%,8.249,11.800,86.3750,0
+Vodafone,Cable & Telecoms,VOD,Bond,Main Market,Unsecured,XS1472483772,GBP,Open,Baa2,BBB,BBB,UK,Public,12-08-2056,12-08-2023,Fixed,Annual,3.0%,4.545,5.077,66.0000,0
+OakNorth Bank,Banks & Financials,OAKNBK,Bond,High Yield,Unsecured,XS1713463047,GBP,Open,,,,UK,Private,01-06-2028,01-12-2022,Fixed,Biannual,7.75%,7.579,7.249,102.2500,0
+Barclays,Banks & Financials,BACR,Perpetual,Perpetuals,"Unsecured, AT1",XS1658012023,GBP,Open,Ba2,B+,BBB-,UK,Public,15-09-2024,15-12-2022,Fixed,Quarterly,5.875%,6.620,13.068,88.7500,0
+Metro Bank,Banks & Financials,MTRLON,Bond,High Yield,Unsecured,XS1844097987,GBP,Open,,,CCC+,UK,Public,26-06-2028,26-12-2022,Fixed,Biannual,5.5%,10.526,20.047,52.2500,0
+Unique Pub Co.,Property,UNIQ,Bond,Main Market,Senior Secured,XS0154961188,GBP,Open,WR,B-,B-,UK,Private,30-03-2032,30-12-2022,Fixed,Quarterly,6.464%,5.495,4.203,117.6250,13402.3000
+PureGym,Retail,PURGYM,Bond,Main Market,Senior Secured,XS1756633126,GBP,Open,B3,NR,B-,UK,Private,15-02-2025,15-02-2023,Fixed,Biannual,6.375%,7.074,11.467,90.1250,0
+Jaguar Land Rover,Automotive,TTMTIN,Bond,Main Market,Unsecured,XS1195502031,GBP,Open,B1,B+,WD,UK,Private,01-03-2023,01-03-2023,Fixed,Biannual,3.875%,3.899,6.024,99.3750,0
+Virgin Money,Banks & Financials,CYBG,Perpetual,Perpetuals,"Unsecured, AT1",XS1346644799,GBP,Open,,B,BB,UK,Public,08-12-2022,08-12-2022,Fixed,Biannual,8.0%,7.940,0.000,100.7500,0
+Netflix,Technology,NFLX2,Bond,Main Market,Unsecured,XS2076099865,EUR,Open,Ba1,BBB,,USA,Public,15-05-2029,15-11-2022,Fixed,Biannual,4.625%,4.666,4.783,99.1250,0
+Aviva,Banks & Financials,AVLN,Bond,Main Market,Unsecured,XS0364880186,GBP,Open,A3,BBB+,BBB+,UK,Public,20-05-2058,20-11-2022,Fixed,Biannual,6.875%,6.773,6.763,101.5000,91007.7700
+Goldman Sachs,Banks & Financials,GS,Bond,Main Market,Unsecured,XS1859424902,GBP,Open,A2,BBB+,A,UK,Public,25-07-2029,25-07-2023,Fixed,Annual,3.125%,3.644,5.667,85.7500,40311.2000
+Intermediate Capital Group,Banks & Financials,ICPLN,Bond,Main Market,Unsecured,XS1200576699,GBP,Open,,BBB,BBB,UK,Public,24-03-2023,24-03-2023,Fixed,Biannual,5.0%,5.000,4.982,100.0000,9.5500
+Shawbrook Bank,Banks & Financials,SHAWLN_2030,Bond,High Yield,Unsecured,XS2199260576,GBP,Suspended,,,,UK,Private,10-10-2030,10-04-2023,Fixed,Biannual,9.0%,9.207,9.407,97.7500,0
+Travelex,Banks & Financials,TVLX_2025,Bond,High Yield,"Unsecured, PIK",XS2248458049,GBP,Open,,,,United Kingdom,Private,05-08-2025,05-02-2023,Payment-In-Kind Toggle,Quarterly,12.5%,11.962,10.977,104.5000,30378.5500
+Codere Group,"Entertainment, Media & Broadcasting",CDRSM_2023,Bond,High Yield,Super Senior Secured,XS2209052419,EUR,Open,Caa1,CCC+,WD,Spain,Public,30-09-2026,31-03-2023,Payment-In-Kind,Biannual,11.0%,11.876,0.000,92.6250,56189.1500
+Burford Capital,Banks & Financials,BURLN_2024,Bond,Main Market,Unsecured,XS1391063424,GBP,Open,Ba2,,,UK,Public,26-10-2024,26-04-2023,Fixed,Biannual,6.125%,6.156,6.400,99.5000,11933.7000
+New Look,Retail,NLK_2027,Loan,Special Situations,"Unsecured, PIK",NLK_2027,GBP,Suspended,,,,United Kingdom,Private,09-11-2027,10-05-2023,Payment-In-Kind,Biannual,16.5%,16.500,16.498,100.0000,0
+AMC,"Entertainment, Media & Broadcasting",AMC_2026,Bond,Special Situations,"Unsecured, PIK",USU0237LAJ45,USD,Suspended,Caa3,CCC-,,USA,Public,15-06-2026,15-12-2022,Payment-In-Kind,Biannual,12.0%,31.788,40.320,37.7500,0
+New Look,Retail,NLK_SUB,Loan,Special Situations,Subordinated,NLK_SUB,GBP,Suspended,,,,United Kingdom,Private,09-11-2029,09-11-2029,Fixed,Biannual,0.0%,0.000,0.000,100.0000,0
+LendInvest,Banks & Financials,LENDIN2,Bond,Main Market,Senior Secured,XS1791022186,GBP,Open,,,,UK,Private,06-10-2023,06-04-2023,Fixed,Biannual,5.375%,5.402,5.952,99.5000,28.0000
+The AA,Services,AABOND_2026,Bond,High Yield,Second Lien Secured,XS2291336167,GBP,Open,,B+,,UK,Private,31-01-2026,31-01-2023,Fixed,Biannual,6.5%,7.939,13.652,81.8750,0
+Matalan,Retail,MTNLN_2LIEN,Bond,High Yield,Second Lien Secured,XS1756324684,GBP,Suspended,Caa3,CC,,UK,Private,31-01-2024,31-01-2023,Payment-In-Kind Toggle,Biannual,9.5%,11.585,26.851,82.0000,0
+AMC,"Entertainment, Media & Broadcasting",AMC,Bond,Main Market,Subordinated,XS1512809606,GBP,Open,Ca,CCC-,WD,USA,Public,15-11-2024,15-11-2022,Fixed,Biannual,6.375%,8.279,20.023,77.0000,0
+Golden Lane Housing,Property,RCHBLN,Bond,Main Market,Unsecured,XS2357539522,GBP,Open,,,,United Kingdom,Private,22-07-2031,22-01-2023,Fixed,Biannual,3.25%,3.591,4.588,90.5000,92.8600
+United Group,"Entertainment, Media & Broadcasting",ADRBID_28,Bond,Main Market,Senior Secured,XS2010027881,EUR,Open,B2,B,,Netherlands,LLC,15-08-2028,15-02-2023,Fixed,Biannual,4.625%,6.167,10.527,75.0000,0
+Provident Financial,Banks & Financials,PFGLN_2032,Bond,High Yield,Subordinated,XS2397348801,GBP,Open,,,B+,UK,Public,13-01-2032,13-01-2023,Fixed,Biannual,8.875%,9.902,10.673,89.6250,5752.6100
+RAC,Services,RACLN,Bond,Main Market,Second Lien Secured,XS2401582999,GBP,Open,,B+,,UK,Private,04-11-2027,06-05-2023,Fixed,Biannual,5.25%,6.796,11.367,77.2500,0
+Asda,Retail,ASSDLN,Bond,Main Market,Senior Secured,XS2404741238,GBP,Open,B1,,BB+,United Kingdom,Private,16-02-2026,01-04-2023,Fixed,Biannual,4.5%,5.349,10.369,84.1250,0
+B&M,Retail,BMELN,Bond,Main Market,Senior Secured,XS2411541738,GBP,Open,Ba2,BB,,United Kingdom,Public,15-11-2028,15-11-2022,Fixed,Biannual,4.0%,5.170,8.956,77.3750,98805.2100
+Codere Group,"Entertainment, Media & Broadcasting",CDRSM_SUB,Bond,High Yield,Subordinated,CDRSM_SUBPIK,EUR,Suspended,,,,Spain,Public,30-11-2022,30-11-2022,Payment-In-Kind,Biannual,7.5%,8.427,0.000,89.0000,0
+Rothesay Life,Banks & Financials,ROTHLF_5_PERP,Perpetual,Perpetuals,Subordinated,XS2393498204,GBP,Open,,,BBB-,UK,Private,13-10-2031,13-04-2023,Fixed,Biannual,5.0%,7.561,11.076,66.1250,0
+Voyage Care,Healthcare,VOYCAR_5.875,Bond,Main Market,Senior Secured,XS2436454768,GBP,Open,B2,B+,,UK,Private,15-02-2027,15-02-2023,Fixed,Biannual,5.875%,6.821,9.953,86.1250,0
+Orchard,Banks & Financials,ORCH_6.25,Bond,Main Market,Senior Secured,GB00BMBV8F68,GBP,Open,,,,UK,Public,02-06-2027,02-12-2022,Fixed,Biannual,6.25%,6.954,9.009,89.8750,0
+EnQuest,"Energy, Utilities & Infrastructure",ENQLN_9,Bond,High Yield,Subordinated,XS2461853793,GBP,Open,,,,UK,Public,27-10-2027,27-04-2023,Fixed,Biannual,9.0%,8.989,8.966,100.1250,52354.0700
+EnQuest,"Energy, Utilities & Infrastructure",ENQLN_9_Suspended,Bond,High Yield,Subordinated,XS2461853793,GBP,Suspended,,,,UK,Public,27-10-2027,27-04-2023,Fixed,Biannual,9.0%,9.000,8.998,100.0000,0
+Miller Homes,Property,MLRHOM_7,Bond,Main Market,Senior Secured,XS2447921896,GBP,Open,B1,B+,BB-,UK,Private,15-05-2029,15-11-2022,Fixed,Biannual,7.0%,9.859,13.925,71.0000,0
+HM Treasury,Government,UKT_0_¾_07/22/23,Bond,Main Market,Unsecured,GB00BF0HZ991,GBP,Open,Aa3,AA,AA-,United Kingdom,Public,22-07-2023,22-01-2023,Fixed,Biannual,0.75%,0.762,3.167,98.3750,14716.9100
+HM Treasury,Government,UKT_1_04/22/24,Bond,Main Market,Unsecured,GB00BFWFPL34,GBP,Open,Aa3,AA,AA-,United Kingdom,Public,22-04-2024,22-04-2023,Fixed,Biannual,1.0%,1.030,3.064,97.1250,20071.1100
+HM Treasury,Government,UKT_0_⅛_01/31/23,Bond,Main Market,Unsecured,GB00BL68HG94,GBP,Open,Aa3,AA,AA-,United Kingdom,Public,31-01-2023,31-01-2023,Fixed,Biannual,0.125%,0.126,2.502,99.5070,2691.2100
+HM Treasury,Government,UKT_0_⅛_01/31/24,Bond,Main Market,Unsecured,GB00BMGR2791,GBP,Open,Aa3,AA,AA-,United Kingdom,Public,31-01-2024,31-01-2023,Fixed,Biannual,0.125%,0.130,3.314,96.2500,618.0300
+HM Treasury,Government,UKTB_0_01/03/23,Bond,Main Market,Unsecured,GB00BP1XHR80,GBP,Open,Aa3,AA,AA-,United Kingdom,Public,03-01-2023,03-01-2023,Fixed,Biannual,0.0%,0.000,2.800,99.6300,0
+HM Treasury,Government,UKTB_03/20/23,Bond,Main Market,Unsecured,GB00BP1YJ426,GBP,Open,Aa3,AA,AA-,United Kingdom,Public,20-03-2023,20-03-2023,Fixed,Biannual,0.0%,0.000,3.214,98.8990,0
+HM Treasury,Government,UKT_1_¼_07/22/27,Bond,Main Market,Unsecured,GB00BDRHNP05,GBP,Open,Aa3,AA,AA-,United Kingdom,Public,22-07-2027,22-01-2023,Fixed,Biannual,1.25%,1.372,3.310,91.1250,0
+HM Treasury,Government,UKT_2_¼_09/07/23,Bond,Main Market,Unsecured,GB00B7Z53659,GBP,Open,Aa3,AA,AA-,United Kingdom,Public,07-09-2023,07-03-2023,Fixed,Biannual,2.25%,2.270,3.352,99.1250,0
+Mcdonalds,Consumer & Food,MCD_3_¾_05/31/3,Bond,Main Market,Unsecured,XS2486285021,GBP,Open,Baa1,BBB+,,USA,Public,31-05-2038,31-05-2023,Fixed,Annual,3.75%,4.286,4.858,87.5000,64243.1300
+Altice,Cable & Telecoms,SFRFP_8_05/15/27,Bond,Main Market,Senior Secured,XS2138128314,EUR,Open,Caa1,CCC+,,Netherlands,Public,15-05-2027,15-11-2022,Fixed,Biannual,8.0%,10.702,16.101,74.7500,96668.7400
+National Grid,"Energy, Utilities & Infrastructure",NGGLN,Bond,Main Market,Unsecured,XS0103338496,GBP,Open,Baa1,BBB+,A-,United Kingdom,Public,16-12-2024,16-12-2022,Fixed,Annual,7.0%,6.723,4.808,104.1250,36607.5300
+Imperial Brands,Consumer & Food,IMBLN,Bond,Main Market,Unsecured,XS0683568223,GBP,Open,Baa3,BBB,BBB,United Kingdom,Public,28-09-2026,28-09-2023,Fixed,Annual,5.5%,5.612,6.000,98.0000,9901.5200
+Apple,Technology,AAPL,Bond,Main Market,Unsecured,XS1269175466,GBP,Open,Aaa,AA+,AAA,USA,Public,31-07-2029,31-01-2023,Fixed,Biannual,3.05%,3.177,3.729,96.0000,98439.9400
+AB InBev,Consumer & Food,ABIBB,Bond,Main Market,Unsecured,BE6295393936,GBP,Open,Baa1,BBB+,BBB,Belgium,Public,24-05-2029,24-05-2023,Fixed,Annual,2.25%,2.228,2.073,101.0000,0
