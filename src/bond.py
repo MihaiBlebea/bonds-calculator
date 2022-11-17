@@ -1,8 +1,9 @@
 from typing import Dict
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import datetime
 from math import floor
 import pycountry
+from src.rating import Rating
 
 
 def all_countries()-> Dict[str, str]:
@@ -47,6 +48,8 @@ class Bond:
 
     fitch_rate: str
 
+    rating: Rating
+
     country: str
 
     ownership: str
@@ -71,6 +74,8 @@ class Bond:
 
     available: float
 
+    rating: Rating = field(default=None, init=False)
+
     def __post_init__(self)-> None:
         self.maturity = datetime.strptime(self.maturity, "%d-%m-%Y")
         self.next_payment = datetime.strptime(self.next_payment, "%d-%m-%Y")
@@ -80,6 +85,8 @@ class Bond:
         self.price = round(float(self.price), 4)
         self.available = round(float(self.available), 4)
         self.country = self._prep_country(self.country)
+
+        self.rating = Rating(self.snp_rate)
 
     def _prep_coupon(self, value)-> float:
         coupon = value.replace("%", "")
@@ -97,20 +104,13 @@ class Bond:
 
         return COUNTRIES[value] if value in COUNTRIES else value
 
-    def is_rate(self, rate: str)-> bool:
-        rate = 0
-        if rate in self.snp_rate:
-            rate += 1
-
-        if rate in self.moodys_rate:
-            rate += 1
-
-        if rate in self.fitch_rate:
-            rate += 1
-
-        return rate > 2
-
     def get_maturity_level(self)-> str:
+        """
+        Get bonds by maturity level:
+        - s = small maturity level (< 6 months)
+        - m = medium maturity level (6 - 12 months)
+        - l = long maturity level (> 12 months)
+        """
         diff = self.maturity - datetime.now()
         diff_months = floor(diff.days / 30)
 
@@ -121,12 +121,20 @@ class Bond:
         else:
             return "l"
 
+    def is_rate(self, rate: str)-> bool:
+        return self.rating == Rating(rate)
+
     def is_a_rate(self)-> bool:
-        return self.is_rate("A")
+        return self.rating.is_a_rate()
 
     def is_b_rate(self)-> bool:
-        return self.is_rate("B")
+        return self.rating.is_b_rate()
 
     def is_c_rate(self)-> bool:
-        return self.is_rate("C")
+        return self.rating.is_c_rate()
+    
+    def is_investment_grade(self)-> bool:
+        return self.rating.is_investment_grade()
 
+    def is_high_yield_grade(self)-> bool:
+        return self.rating.is_high_yield_grade()
