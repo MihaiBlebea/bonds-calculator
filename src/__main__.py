@@ -15,8 +15,17 @@ def load_bonds_from_csv(file_path: str)-> Bonds:
 
 @click.command()
 @click.option("-a", "--amount", help="amount to invest", required=True, type=int)
-def simulate(amount: int):
+@click.argument("file")
+def simulate(file, amount: int, bond):
     click.echo(f"Simulate investing £{amount:,} in bonds")
+
+    b = load_bonds_from_csv(file)
+    b.sort_by_maturity()
+    b = b.first()[0]
+    # bond = bonds[0]
+    # click.echo(bonds)
+    # bonds.remove(bond)
+    # click.echo(bonds.to_df().iloc[:2]["Company"])
 
 @click.command()
 @click.option("-o", "--output", help="output file", required=False, default=None)

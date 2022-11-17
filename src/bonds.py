@@ -112,3 +112,12 @@ class Bonds(list):
 
     def only_available(self)-> Bonds:
         return self._only_this(lambda b: b.is_available())
+
+    def sort_by_maturity(self)-> None:
+        self.sort(key=lambda x: x.maturity, reverse=False)
+
+    def first(self, count: int = 1)-> Bonds:
+        b = bonds()
+        [ b.append(bond) for bond in self[0:count] ]
+
+        return b
