@@ -103,3 +103,12 @@ class Bonds(list):
 
     def only_high_yield_grade(self)-> Bonds:
         return self._only_this(lambda b: b.is_high_yield_grade())
+
+    def only_premium_price(self)-> Bonds:
+        return self._only_this(lambda b: b.is_premium())
+
+    def only_discount_price(self)-> Bonds:
+        return self._only_this(lambda b: b.is_discount())
+
+    def only_available(self)-> Bonds:
+        return self._only_this(lambda b: b.is_available())

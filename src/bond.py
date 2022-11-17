@@ -138,3 +138,12 @@ class Bond:
 
     def is_high_yield_grade(self)-> bool:
         return self.rating.is_high_yield_grade()
+
+    def is_premium(self)-> bool:
+        return self.price > 100
+
+    def is_discount(self)-> bool:
+        return self.price < 100
+
+    def is_available(self)-> bool:
+        return self.available > 0
