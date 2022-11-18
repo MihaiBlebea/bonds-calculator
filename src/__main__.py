@@ -31,6 +31,7 @@ def simulate(file, amount: int, bond):
 @click.option("-o", "--output", help="output file", required=False, default=None)
 @click.option("-b", "--based", help="bond based in country", default=None)
 @click.option("-c", "--coupon", help="coupon must be greater than", default=None, type=float)
+@click.option("-cy", "--current-yield", help="current yield must be greater than", default=None, type=float)
 @click.option("-mm", "--maturity-months", help="max maturity in months", default=None, type=int)
 @click.option("-my", "--maturity-years", help="max maturity in years", default=None, type=int)
 @click.option("-ig", "--investment-grade", help="only investment grade bonds", default=False, is_flag=True)
@@ -43,7 +44,8 @@ def filter(
     file: str, 
     output: str, 
     based: str, 
-    coupon: float, 
+    coupon: float,
+    current_yield: float, 
     maturity_months: int,
     maturity_years: int,
     investment_grade: bool, 
@@ -59,6 +61,9 @@ def filter(
 
     if coupon is not None:
         b = b.only_coupon_gt(coupon)
+
+    if current_yield is not None:
+        b = b.only_current_yield_gt(current_yield)
 
     if investment_grade:
         b = b.only_investment_grade()
@@ -78,10 +83,15 @@ def filter(
     if available:
         b = b.only_available()
 
-    if output is not None:
-        b.to_df().to_csv(output, index=False)
+    df = b.to_df()
+    if df is None:
+        click.echo(click.style("No bounds found", bg="red"))
+        exit(0)
 
-    click.echo(b.to_df())
+    if output is not None:
+        df.to_csv(output, index=False)
+
+    click.echo(df)
 
 @click.group()
 def cli():

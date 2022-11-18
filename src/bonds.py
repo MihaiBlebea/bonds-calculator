@@ -91,6 +91,9 @@ class Bonds(list):
     def only_coupon_gt(self, value: float)-> Bonds:
         return self._only_this(lambda b: b.coupon > value)
 
+    def only_current_yield_gt(self, value: float)-> Bonds:
+        return self._only_this(lambda b: b.current_yield > value)
+
     def only_available(self)-> Bonds:
         return self._only_this(lambda b: b.available > 0)
     
