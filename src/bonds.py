@@ -22,7 +22,6 @@ def bonds(*bonds: List[Bond])-> Bonds:
 
     return b
 
-
 class Bonds(list):
     """Bonds is a collection of Bond models."""
     
@@ -51,8 +50,8 @@ class Bonds(list):
         if len(self) == 0:
             return None
 
-        keys = [ attr for attr in dir(self[0]) if attr[0] != "_" ]
-        columns = [ attr.replace("_", " ").title() for attr in keys ]
+        keys = self[0].get_properties()
+        columns = [ attr.title() for attr in keys ]
         data = []
         for b in self:
             data.append([ getattr(b, k) for k in keys ])
@@ -95,8 +94,11 @@ class Bonds(list):
     def only_available(self)-> Bonds:
         return self._only_this(lambda b: b.available > 0)
     
-    def only_maturity(self, maturity_level: str = "l")-> Bonds:
-        return self._only_this(lambda b: b.get_maturity_level() == maturity_level)
+    def only_max_maturity_months(self, months: int)-> Bonds:
+        return self._only_this(lambda b: b.get_maturity_months() < months)
+
+    def only_max_maturity_years(self, years: int)-> Bonds:
+        return self._only_this(lambda b: b.get_maturity_years() < years)
 
     def only_investment_grade(self)-> Bonds:
         return self._only_this(lambda b: b.is_investment_grade())

@@ -48,8 +48,6 @@ class Bond:
 
     fitch_rate: str
 
-    rating: Rating
-
     country: str
 
     ownership: str
@@ -74,7 +72,7 @@ class Bond:
 
     available: float
 
-    rating: Rating = field(default=None, init=False)
+    _rating: Rating = field(default=None, init=False)
 
     def __post_init__(self)-> None:
         self.maturity = datetime.strptime(self.maturity, "%d-%m-%Y")
@@ -86,7 +84,7 @@ class Bond:
         self.available = round(float(self.available), 4)
         self.country = self._prep_country(self.country)
 
-        self.rating = Rating(self.snp_rate)
+        self._rating = Rating(self.snp_rate)
 
     def _prep_coupon(self, value)-> float:
         coupon = value.replace("%", "")
@@ -104,40 +102,36 @@ class Bond:
 
         return COUNTRIES[value] if value in COUNTRIES else value
 
-    def get_maturity_level(self)-> str:
-        """
-        Get bonds by maturity level:
-        - s = small maturity level (< 6 months)
-        - m = medium maturity level (6 - 12 months)
-        - l = long maturity level (> 12 months)
-        """
-        diff = self.maturity - datetime.now()
-        diff_months = floor(diff.days / 30)
+    def get_properties(self):   
+        return [i for i in self.__dict__.keys() if i[:1] != "_"]
 
-        if diff_months < 6:
-            return "s"
-        elif diff_months < 12:
-            return "m"
-        else:
-            return "l"
+    def get_maturity_months(self)-> int:
+        # diff = self.maturity - datetime.now()
+
+        return floor((self.maturity - datetime.now()).days / 30)
+
+    def get_maturity_years(self)-> int:
+        # diff = self.maturity - datetime.now()
+
+        return floor((self.maturity - datetime.now()).days / 365)
 
     def is_rate(self, rate: str)-> bool:
-        return self.rating == Rating(rate)
+        return self._rating == Rating(rate)
 
     def is_a_rate(self)-> bool:
-        return self.rating.is_a_rate()
+        return self._rating.is_a_rate()
 
     def is_b_rate(self)-> bool:
-        return self.rating.is_b_rate()
+        return self._rating.is_b_rate()
 
     def is_c_rate(self)-> bool:
-        return self.rating.is_c_rate()
+        return self._rating.is_c_rate()
     
     def is_investment_grade(self)-> bool:
-        return self.rating.is_investment_grade()
+        return self._rating.is_investment_grade()
 
     def is_high_yield_grade(self)-> bool:
-        return self.rating.is_high_yield_grade()
+        return self._rating.is_high_yield_grade()
 
     def is_premium(self)-> bool:
         return self.price > 100

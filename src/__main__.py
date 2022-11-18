@@ -31,14 +31,26 @@ def simulate(file, amount: int, bond):
 @click.option("-o", "--output", help="output file", required=False, default=None)
 @click.option("-b", "--based", help="bond based in country", default=None)
 @click.option("-c", "--coupon", help="coupon must be greater than", default=None, type=float)
-@click.option("-m", "--maturity", help="max maturity level [s - short, m - medium, l - long]", default=None)
+@click.option("-mm", "--maturity-months", help="max maturity in months", default=None, type=int)
+@click.option("-my", "--maturity-years", help="max maturity in years", default=None, type=int)
 @click.option("-ig", "--investment-grade", help="only investment grade bonds", default=False, is_flag=True)
 @click.option("-hg", "--high-yield-grade", help="only high yield grade bonds", default=False, is_flag=True)
 @click.option("-p", "--premium", help="only premium price bonds", default=False, is_flag=True)
 @click.option("-d", "--discount", help="only discount price bonds", default=False, is_flag=True)
 @click.option("-a", "--available", help="only available bonds", default=False, is_flag=True)
 @click.argument("file")
-def filter(file, output, based, coupon, maturity, investment_grade, high_yield_grade, premium, discount, available):
+def filter(
+    file: str, 
+    output: str, 
+    based: str, 
+    coupon: float, 
+    maturity_months: int,
+    maturity_years: int,
+    investment_grade: bool, 
+    high_yield_grade: bool, 
+    premium: bool, 
+    discount: bool, 
+    available: bool)-> None:
 
     b = load_bonds_from_csv(file)
 
@@ -58,10 +70,10 @@ def filter(file, output, based, coupon, maturity, investment_grade, high_yield_g
     elif discount:
         b = b.only_discount_price()
 
-    if maturity is not None:
-        if maturity not in ["s", "m", "l"]:
-            raise click.BadParameter("Should be one of s, m, l")
-        b = b.only_maturity(maturity)
+    if maturity_months is not None:
+        b = b.only_max_maturity_months(maturity_months)
+    elif maturity_years is not None:
+        b = b.only_max_maturity_years(maturity_years)
 
     if available:
         b = b.only_available()
