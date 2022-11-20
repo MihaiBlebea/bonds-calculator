@@ -65,7 +65,7 @@ class Rating:
         return 16 < self.get_score() <= 19
 
     def is_investment_grade(self)-> bool:
-        return self.get_score() <= 10
+        return 0 < self.get_score() <= 10
 
     def is_high_yield_grade(self)-> bool:
         return self.get_score() > 10

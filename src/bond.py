@@ -1,4 +1,4 @@
-from typing import Dict
+from typing import Dict, List, Tuple
 from dataclasses import dataclass, field
 from datetime import datetime
 from math import floor
@@ -102,18 +102,29 @@ class Bond:
 
         return COUNTRIES[value] if value in COUNTRIES else value
 
-    def get_properties(self):   
+    def _calc_percentage_diff(self, initial: float, current: float)-> float:
+        return abs(initial - current) / current
+
+    def get_properties(self)-> List[str]:   
         return [i for i in self.__dict__.keys() if i[:1] != "_"]
 
     def get_maturity_months(self)-> int:
-        # diff = self.maturity - datetime.now()
-
         return floor((self.maturity - datetime.now()).days / 30)
 
     def get_maturity_years(self)-> int:
-        # diff = self.maturity - datetime.now()
-
         return floor((self.maturity - datetime.now()).days / 365)
+
+    def get_total_yield(self)-> float:
+        """Get the total amount of money returned at maturity, including intermediate coupons and final principal return."""
+        yield_per_month = (self.price * self.current_yield) / 12
+        return (yield_per_month * self.get_maturity_months()) + 100
+
+    def get_maturity_growth(self)-> float:
+        """Get the growth % between the initial price of a bond and the total money returned at maturity."""
+        return self._calc_percentage_diff(self.price, self.get_total_yield())
+
+    def get_rating_score(self)-> str:
+        return self._rating.get_score()
 
     def is_rate(self, rate: str)-> bool:
         return self._rating == Rating(rate)

@@ -121,6 +121,9 @@ class Bonds(list):
     def sort_by_maturity(self)-> None:
         self.sort(key=lambda x: x.maturity, reverse=False)
 
+    def sort_by_length(self)-> None:
+        self.sort(key=lambda x: x.get_maturity_months(), reverse=False)
+
     def first(self, count: int = 1)-> Bonds:
         b = bonds()
         [ b.append(bond) for bond in self[0:count] ]

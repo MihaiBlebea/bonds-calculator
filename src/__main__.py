@@ -1,5 +1,6 @@
 import click
 import csv
+from src.report import Report
 from src.bond import Bond
 from src.bonds import Bonds, bonds
 
@@ -14,18 +15,16 @@ def load_bonds_from_csv(file_path: str)-> Bonds:
     return b
 
 @click.command()
-@click.option("-a", "--amount", help="amount to invest", required=True, type=int)
+@click.option("-s", "--sort", help="sort by", required=False, type=str)
+@click.option("-a", "--asc", help="sort ascending", required=False, type=bool, is_flag=True)
 @click.argument("file")
-def simulate(file, amount: int, bond):
-    click.echo(f"Simulate investing £{amount:,} in bonds")
+def report(file, sort: str, asc: bool):
+    click.echo(f"Generating report")
 
-    b = load_bonds_from_csv(file)
-    b.sort_by_maturity()
-    b = b.first()[0]
-    # bond = bonds[0]
-    # click.echo(bonds)
-    # bonds.remove(bond)
-    # click.echo(bonds.to_df().iloc[:2]["Company"])
+    df = Report(load_bonds_from_csv(file)).generate_report()
+    
+    click.echo(df)
+
 
 @click.command()
 @click.option("-o", "--output", help="output file", required=False, default=None)
@@ -99,7 +98,7 @@ def cli():
 
 cli.add_command(filter, "filter")
 
-cli.add_command(simulate, "simulate")
+cli.add_command(report, "report")
 
 def main():
     cli()
