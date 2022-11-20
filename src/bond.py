@@ -1,4 +1,4 @@
-from typing import Dict, List, Tuple
+from typing import Dict, List
 from dataclasses import dataclass, field
 from datetime import datetime
 from math import floor
@@ -74,6 +74,8 @@ class Bond:
 
     _rating: Rating = field(default=None, init=False)
 
+    id: str = field(default="", init=False)
+
     def __post_init__(self)-> None:
         self.maturity = datetime.strptime(self.maturity, "%d-%m-%Y")
         self.next_payment = datetime.strptime(self.next_payment, "%d-%m-%Y")
@@ -85,6 +87,7 @@ class Bond:
         self.country = self._prep_country(self.country)
 
         self._rating = Rating(self.snp_rate)
+        self.id = self._generate_id(self.company, self.coupon, self.maturity)
 
     def _prep_coupon(self, value)-> float:
         coupon = value.replace("%", "")
@@ -101,6 +104,12 @@ class Bond:
             return "US"
 
         return COUNTRIES[value] if value in COUNTRIES else value
+
+    def _generate_id(self, company: str, coupon: float, maturity: datetime)-> str:
+        company_name = company.replace(" ", "_").replace(",", "").replace(".", "").lower().strip()
+        rate = str(round(coupon * 100, 2)).replace(".", "_")
+        maturity_date = maturity.strftime("%d_%m_%Y")
+        return f"{company_name}-{rate}-{maturity_date}"
 
     def _calc_percentage_diff(self, initial: float, current: float)-> float:
         return abs(initial - current) / current
@@ -125,6 +134,25 @@ class Bond:
 
     def get_rating_score(self)-> str:
         return self._rating.get_score()
+
+    def get_risk_score(self)-> float:
+        risk = 0
+        if self.get_maturity_years() > 0:
+            risk += round(self.get_maturity_years() / 3, 0)
+
+        if self.is_public_company() is False:
+            risk += 2
+
+        if self.is_secured() is False:
+            risk += 10
+
+        if self.is_b_rate():
+            risk += 5
+
+        if self.is_c_rate():
+            risk += 20
+
+        return risk
 
     def is_rate(self, rate: str)-> bool:
         return self._rating == Rating(rate)
@@ -152,3 +180,9 @@ class Bond:
 
     def is_available(self)-> bool:
         return self.available > 0
+
+    def is_public_company(self)-> bool:
+        return self.ownership == "Public"
+
+    def is_secured(self)-> bool:
+        return "Secured" in self.seniority

@@ -21,7 +21,11 @@ def load_bonds_from_csv(file_path: str)-> Bonds:
 def report(file, sort: str, asc: bool):
     click.echo(f"Generating report")
 
-    df = Report(load_bonds_from_csv(file)).generate_report()
+    direction = "desc"
+    if asc:
+        direction = "asc"
+
+    df = Report(load_bonds_from_csv(file)).generate_report(sort, direction)
     
     click.echo(df)
 

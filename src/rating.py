@@ -129,4 +129,3 @@ class Rating:
 
     def is_high_yield_grade(self)-> bool:
         return self.get_score() > 10
-

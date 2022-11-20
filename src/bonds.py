@@ -118,11 +118,20 @@ class Bonds(list):
     def only_available(self)-> Bonds:
         return self._only_this(lambda b: b.is_available())
 
-    def sort_by_maturity(self)-> None:
-        self.sort(key=lambda x: x.maturity, reverse=False)
+    def sort_by_maturity(self, direction = "desc")-> None:
+        self.sort(key=lambda x: x.maturity, reverse=True if direction == "desc" else False)
 
-    def sort_by_length(self)-> None:
-        self.sort(key=lambda x: x.get_maturity_months(), reverse=False)
+    def sort_by_length(self, direction = "desc")-> None:
+        self.sort(key=lambda x: x.get_maturity_months(), reverse=True if direction == "desc" else False)
+
+    def sort_by_rating_score(self, direction = "desc")-> None:
+        self.sort(key=lambda x: x.get_rating_score(), reverse=True if direction == "desc" else False)
+
+    def sort_by_total_yield(self, direction = "desc")-> None:
+        self.sort(key=lambda x: x.get_total_yield(), reverse=True if direction == "desc" else False)
+
+    def sort_by_risk_score(self, direction = "desc")-> None:
+        self.sort(key=lambda x: x.get_risk_score(), reverse=True if direction == "desc" else False)
 
     def first(self, count: int = 1)-> Bonds:
         b = bonds()
