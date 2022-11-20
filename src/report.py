@@ -17,7 +17,6 @@ class Report:
     def generate_report(self)-> DataFrame:
         b = self.bonds.only_discount_price()\
             .only_bond_type()\
-            .only_discount_price()\
             .only_available()
 
         b.sort_by_length()
@@ -34,6 +33,6 @@ class Report:
                 bond.get_rating_score()
             ])
 
-        columns=["Company", "Lose", "Win", "Rate", "Maturity (months)", "Investable", "Rating"]
+        columns=["Company", "Lose", "Win", "Rate", "Maturity (months)", "Investable", "Rating score"]
 
         return DataFrame(data, columns=columns)
