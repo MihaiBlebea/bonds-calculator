@@ -31,6 +31,23 @@ def report(file, sort: str, asc: bool):
 
 
 @click.command()
+@click.option("-t", "--ticker", help="ticker to compare with", required=False, default=None, type=str)
+@click.option("-i", "--isin", help="ticker to compare with", required=False, default=None, type=str)
+@click.option("-a", "--amount", help="amount invested", required=True, default=0, type=int)
+@click.option("-r", "--reinvest", help="reinvest the ", default=True, type=bool, is_flag=True)
+@click.argument("file")
+def simulate(file, ticker: str, isin: str, amount: int, reinvest: bool):
+    click.echo(f"Simulate holding this bond to maturity")
+
+    if ticker is None and isin is None:
+        click.ClickException("Please supply ticker (-t) or isin (-i) flags.")
+
+    df = Report(load_bonds_from_csv(file)).simulate(ticker, isin, amount, reinvest)
+    
+    click.echo(df)
+
+
+@click.command()
 @click.option("-o", "--output", help="output file", required=False, default=None)
 @click.option("-b", "--based", help="bond based in country", default=None)
 @click.option("-c", "--coupon", help="coupon must be greater than", default=None, type=float)
@@ -103,6 +120,8 @@ def cli():
 cli.add_command(filter, "filter")
 
 cli.add_command(report, "report")
+
+cli.add_command(simulate, "simulate")
 
 def main():
     cli()

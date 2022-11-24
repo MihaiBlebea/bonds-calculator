@@ -138,3 +138,17 @@ class Bonds(list):
         [ b.append(bond) for bond in self[0:count] ]
 
         return b
+
+    def find_by_ticker(self, ticker: str)-> Bond | None:
+        for b in self:
+            if b.ticker == ticker:
+                return b
+
+        return None
+
+    def find_by_isin(self, isin: str)-> Bond | None:
+        for b in self:
+            if b.isin == isin:
+                return b
+
+        return None

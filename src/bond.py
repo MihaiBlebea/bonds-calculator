@@ -123,10 +123,12 @@ class Bond:
     def get_maturity_years(self)-> int:
         return floor((self.maturity - datetime.now()).days / 365)
 
-    def get_total_yield(self)-> float:
+    def get_total_yield(self, amount_invested: int = None)-> float:
         """Get the total amount of money returned at maturity, including intermediate coupons and final principal return."""
-        yield_per_month = (self.price * self.current_yield) / 12
-        return (yield_per_month * self.get_maturity_months()) + 100
+        amount_invested = self.price if amount_invested is None else amount_invested
+        yield_per_month = (amount_invested * self.current_yield) / 12
+
+        return (yield_per_month * self.get_maturity_months()) + amount_invested
 
     def get_maturity_growth(self)-> float:
         """Get the growth % between the initial price of a bond and the total money returned at maturity."""
@@ -149,10 +151,19 @@ class Bond:
         if self.is_b_rate():
             risk += 5
 
-        if self.is_c_rate():
+        if self.is_c_rate() or self.is_not_rated():
             risk += 20
 
         return risk
+
+    def get_coupon_count(self)-> int:
+        """Get the number of coupon payouts per year."""
+        match self.coupon_frequency:
+            case "Annual": return 1
+            case "Biannual": return 2
+            case "Quarterly": return 4
+            case _:
+                raise Exception("could not figure out coupon payout")
 
     def is_rate(self, rate: str)-> bool:
         return self._rating == Rating(rate)
@@ -165,6 +176,9 @@ class Bond:
 
     def is_c_rate(self)-> bool:
         return self._rating.is_c_rate()
+
+    def is_not_rated(self)-> bool:
+        return self._rating.get_score() == 0
     
     def is_investment_grade(self)-> bool:
         return self._rating.is_investment_grade()

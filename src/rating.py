@@ -82,15 +82,15 @@ class Rating:
     use_rating: str = RatingSystem.SANDP
 
     def __post_init__(self):
-        if self.snp_rate == "" or self.snp_rate is None:
+        if self.snp_rate == "" or self.snp_rate == "NR" or self.snp_rate is None:
             self.snp_rate = "NR"
             self.use_rating = RatingSystem.MOODY
 
-        if self.moodys_rate == "" or self.moodys_rate is None:
+        if self.moodys_rate == "" or self.moodys_rate == "WR" or self.moodys_rate is None:
             self.moodys_rate = "WR"
             self.use_rating = RatingSystem.FITCH
 
-        if self.fitch_rate == "" or self.fitch_rate is None:
+        if self.fitch_rate == "" or self.fitch_rate == "WD" or self.fitch_rate is None:
             self.fitch_rate = "WD"
             self.use_rating = RatingSystem.SANDP
 
